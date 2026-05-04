@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Кейс эффективного выпускника</title>
+    <meta
+      name="description"
+      content="Интерактивный сайт школьного проекта о тайм-менеджменте для учащихся 10-11 классов при подготовке к экзаменам."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="nav">
+        <a class="brand" href="#top" aria-label="К началу">
+          <span class="brand-mark">10</span>
+          <span>Кейс выпускника</span>
+        </a>
+        <nav class="nav-links" aria-label="Навигация">
+          <a href="#problem">Проблема</a>
+          <a href="#tools">Инструменты</a>
+              <a href="#dashboard">Панель</a>
+          <a href="#research">Исследование</a>
+          <a href="#result">Итог</a>
+        </nav>
+        <button class="icon-button theme-toggle" type="button" aria-label="Сменить тему" title="Сменить тему">
+          <span class="sun-icon"></span>
+        </button>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-art" aria-hidden="true">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="phone-frame">
+              <div class="phone-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="focus-card">
+                <p>Фокус-сессия</p>
+                <strong id="hero-clock">25:00</strong>
+                <div class="ring">
+                  <span></span>
+                </div>
+              </div>
+              <div class="mini-row">
+                <span>ЕГЭ математика</span>
+                <b>25 мин</b>
+              </div>
+              <div class="mini-row alt">
+                <span>Смартфон</span>
+                <b>вне комнаты</b>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-copy reveal">
+            <p class="eyebrow">ГБОУ Школа № 1476 · Москва, 2026</p>
+            <h1>Тайм-менеджмент для старшеклассников без лишнего стресса</h1>
+            <p class="lead">
+              Интерактивная система для учеников 10-11 классов: помогает готовиться к экзаменам,
+              снижать стресс и возвращать до 1.5-2 часов свободного времени в день.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#dashboard">Открыть дашборд</a>
+              <a class="button secondary" href="#tools">Посмотреть методики</a>
+            </div>
+            <div class="metrics-strip" aria-label="Ключевые показатели проекта">
+              <div>
+                <strong>66.6%</strong>
+                <span>считают соцсети главным поглотителем времени</span>
+              </div>
+              <div>
+                <strong>50%</strong>
+                <span>не используют систему планирования</span>
+              </div>
+              <div>
+                <strong>3</strong>
+                <span>методики объединены в одном интерфейсе</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="problem" class="section split reveal">
+          <div>
+            <p class="eyebrow">Актуальность проекта</p>
+            <h2>Когда экзамены близко, время исчезает быстрее обычного</h2>
+          </div>
+          <div class="text-stack">
+            <p>
+              В 10-11 классах резко растет объем информации: появляются пробники, дедлайны,
+              домашние задания и психологическое давление из-за ЕГЭ. Без понятной системы
+              планирования подготовка становится хаотичной.
+            </p>
+            <p>
+              Проблема проекта - противоречие между высокими требованиями к выпускникам и
+              отсутствием навыков рационального распределения времени.
+            </p>
+          </div>
+        </section>
+
+        <section class="section cards-section reveal">
+          <div class="section-head">
+            <p class="eyebrow">Цель и задачи</p>
+            <h2>Проект превращает теорию тайм-менеджмента в ежедневную привычку</h2>
+          </div>
+          <div class="card-grid four">
+            <article class="info-card accent-blue">
+              <span class="card-number">01</span>
+              <h3>Изучить методики</h3>
+              <p>Матрица Эйзенхауэра, техника Помодоро и правило сложной задачи.</p>
+            </article>
+            <article class="info-card accent-green">
+              <span class="card-number">02</span>
+              <h3>Провести опрос</h3>
+              <p>Выявить главные поглотители времени у старшеклассников.</p>
+            </article>
+            <article class="info-card accent-yellow">
+              <span class="card-number">03</span>
+              <h3>Собрать продукт</h3>
+              <p>Создать чек-листы и веб-сайт с интерактивными инструментами.</p>
+            </article>
+            <article class="info-card accent-pink">
+              <span class="card-number">04</span>
+              <h3>Оценить пользу</h3>
+              <p>Проверить, помогает ли система снизить стресс и учебный хаос.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="tools" class="section tools reveal">
+          <div class="section-head">
+            <p class="eyebrow">Три опоры системы</p>
+            <h2>Методики, адаптированные под реальный школьный день</h2>
+          </div>
+          <div class="tool-tabs" role="tablist" aria-label="Методики тайм-менеджмента">
+            <button class="tab active" type="button" data-tab="pomodoro">Помодоро</button>
+            <button class="tab" type="button" data-tab="matrix">Матрица</button>
+            <button class="tab" type="button" data-tab="frog">Лягушка</button>
+          </div>
+          <div class="tool-panel active" id="pomodoro">
+            <div>
+              <h3>25 минут учебы и 5 минут отдыха</h3>
+              <p>
+                Короткие интервалы снижают тревожность перед большой задачей. Вместо мысли
+                "мне надо готовиться весь вечер" появляется понятный старт: один фокус-спринт.
+              </p>
+            </div>
+            <ul class="clean-list">
+              <li>Телефон убирается из рабочей зоны.</li>
+              <li>После 4 циклов делается большой перерыв на 20 минут.</li>
+              <li>Метод особенно подходит для сложных предметов и тестов.</li>
+            </ul>
+          </div>
+          <div class="tool-panel" id="matrix">
+            <div>
+              <h3>Важное видно до того, как оно становится срочным</h3>
+              <p>
+                Матрица Эйзенхауэра помогает отделить подготовку к экзаменам от лишнего шума:
+                соцсетей, случайных сообщений и задач без реальной пользы.
+              </p>
+            </div>
+            <ul class="clean-list">
+              <li>Важно и срочно: дедлайны, пробники, контрольные.</li>
+              <li>Важно, но не срочно: регулярная подготовка к ЕГЭ.</li>
+              <li>Неважно: цифровой шум и бесконечная прокрутка ленты.</li>
+            </ul>
+          </div>
+          <div class="tool-panel" id="frog">
+            <div>
+              <h3>Самую неприятную задачу - первой</h3>
+              <p>
+                "Лягушка дня" убирает фоновое напряжение. Если сложное дело сделано утром или
+                в начале учебного блока, оно не давит на мозг весь день.
+              </p>
+            </div>
+            <ul class="clean-list">
+              <li>Вечером выпиши самую неприятную задачу на завтра.</li>
+              <li>Сделай ее до соцсетей и легких дел.</li>
+              <li>После выполнения отметь награду или перерыв.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="dashboard" class="section dashboard-section reveal">
+          <div class="section-head">
+            <p class="eyebrow">Практический продукт</p>
+            <h2>Интерактивная панель "Инструкция по выживанию"</h2>
+            <p>
+              Данные сохраняются в браузере. Панель можно использовать как ежедневного помощника
+              для подготовки к экзаменам.
+            </p>
+          </div>
+
+          <div class="dashboard">
+            <article class="panel timer-panel">
+              <div class="panel-head">
+                <div>
+                  <span class="panel-kicker">Фокус</span>
+                  <h3>Помодоро</h3>
+                </div>
+                <span class="mode-pill" id="timer-mode">Учеба</span>
+              </div>
+              <div class="timer-face">
+                <svg viewBox="0 0 220 220" aria-hidden="true">
+                  <circle class="track" cx="110" cy="110" r="94"></circle>
+                  <circle class="progress-circle" cx="110" cy="110" r="94"></circle>
+                </svg>
+                <div class="time" id="time-left">25:00</div>
+              </div>
+              <div class="timer-controls">
+                <button class="icon-button" type="button" id="start-timer" aria-label="Старт" title="Старт">
+                  ▶
+                </button>
+                <button class="icon-button" type="button" id="pause-timer" aria-label="Пауза" title="Пауза">
+                  ‖
+                </button>
+                <button class="icon-button" type="button" id="reset-timer" aria-label="Сбросить" title="Сбросить">
+                  ↺
+                </button>
+              </div>
+              <div class="timer-presets">
+                <button type="button" data-minutes="25" class="preset active">25</button>
+                <button type="button" data-minutes="15" class="preset">15</button>
+                <button type="button" data-minutes="5" class="preset">5</button>
+              </div>
+            </article>
+
+            <article class="panel task-panel">
+              <div class="panel-head">
+                <div>
+                  <span class="panel-kicker">План</span>
+                  <h3>План на сегодня</h3>
+                </div>
+                <span class="counter" id="task-count">0/0</span>
+              </div>
+              <form class="task-form" id="task-form">
+                <input id="task-input" type="text" placeholder="Например: решить вариант по химии" autocomplete="off" />
+                <button class="small-button" type="submit">Добавить</button>
+              </form>
+              <ul class="task-list" id="task-list"></ul>
+            </article>
+
+            <article class="panel frog-panel">
+              <div class="panel-head">
+                <div>
+                  <span class="panel-kicker">Главное</span>
+                  <h3>Лягушка дня</h3>
+                </div>
+                <span class="pulse-dot"></span>
+              </div>
+              <textarea id="frog-input" placeholder="Самая сложная задача, которую нужно сделать первой"></textarea>
+              <button class="button primary full" type="button" id="save-frog">Закрепить задачу</button>
+              <div class="frog-note" id="frog-note">
+                Запиши вечером одно неприятное дело, а утром начни именно с него.
+              </div>
+            </article>
+
+            <article class="panel matrix-panel">
+              <div class="panel-head">
+                <div>
+                  <span class="panel-kicker">Приоритеты</span>
+                  <h3>Матрица Эйзенхауэра</h3>
+                </div>
+              </div>
+              <div class="matrix">
+                <button class="matrix-cell urgent important" type="button">
+                  <b>Сделать</b>
+                  <span>срочно и важно</span>
+                </button>
+                <button class="matrix-cell important" type="button">
+                  <b>Запланировать</b>
+                  <span>важно, не срочно</span>
+                </button>
+                <button class="matrix-cell urgent" type="button">
+                  <b>Ограничить</b>
+                  <span>срочно, не важно</span>
+                </button>
+                <button class="matrix-cell" type="button">
+                  <b>Удалить</b>
+                  <span>не важно</span>
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="research" class="section research reveal">
+          <div class="section-head">
+            <p class="eyebrow">Практическое исследование</p>
+            <h2>Опрос показал: проблема есть, и ученики хотят готовое решение</h2>
+          </div>
+          <div class="chart-grid">
+            <article class="chart-card">
+              <h3>Подготовка занимает более 4 часов</h3>
+              <div class="bar" style="--value: 50"><span></span></div>
+              <strong>50%</strong>
+              <p>Высокая нагрузка повышает риск выгорания.</p>
+            </article>
+            <article class="chart-card">
+              <h3>Главный тайм-киллер - смартфон</h3>
+              <div class="bar" style="--value: 66.6"><span></span></div>
+              <strong>66.6%</strong>
+              <p>Большинство осознает влияние соцсетей на учебу.</p>
+            </article>
+            <article class="chart-card">
+              <h3>Нет системы планирования</h3>
+              <div class="bar" style="--value: 50"><span></span></div>
+              <strong>50%</strong>
+              <p>Поэтому нужен простой цифровой помощник.</p>
+            </article>
+            <article class="chart-card">
+              <h3>Готовы использовать инструмент</h3>
+              <div class="bar" style="--value: 66.7"><span></span></div>
+              <strong>66.7%</strong>
+              <p>Проект востребован целевой аудиторией.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section roadmap reveal">
+          <div class="section-head">
+            <p class="eyebrow">Этапы работы</p>
+            <h2>От идеи до готового веб-продукта</h2>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <time>Январь - февраль 2026</time>
+              <h3>Подготовительный этап</h3>
+              <p>Выбор темы, обоснование актуальности, постановка цели и задач.</p>
+            </div>
+            <div class="timeline-item">
+              <time>Февраль 2026</time>
+              <h3>Теоретический этап</h3>
+              <p>Изучение литературы и методов планирования времени.</p>
+            </div>
+            <div class="timeline-item">
+              <time>Март 2026</time>
+              <h3>Практический этап</h3>
+              <p>Опрос, обработка данных, разработка чек-листов и сайта.</p>
+            </div>
+            <div class="timeline-item">
+              <time>Март 2026</time>
+              <h3>Заключительный этап</h3>
+              <p>Оформление отчета, презентация и подготовка к защите.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section testimonials reveal">
+          <div class="section-head">
+            <p class="eyebrow">Апробация</p>
+            <h2>Отзывы после трех дней использования</h2>
+          </div>
+          <div class="quote-grid">
+            <blockquote>
+              <p>
+                "Очень полезный сайт. Раньше было сложно сконцентрироваться на задаче,
+                а теперь стало намного проще работать."
+              </p>
+              <cite>Аноним 1</cite>
+            </blockquote>
+            <blockquote>
+              <p>
+                "Мне понравился блок с лягушкой. Когда видишь самую неприятную задачу,
+                ее проще сделать сразу и забыть."
+              </p>
+              <cite>Аноним 2</cite>
+            </blockquote>
+            <blockquote>
+              <p>
+                "Классный дизайн, все под рукой. Даже без звукового сигнала это
+                отличный помощник для подготовки."
+              </p>
+              <cite>Аноним 3</cite>
+            </blockquote>
+          </div>
+        </section>
+
+        <section id="result" class="section final-section reveal">
+          <div class="final-card">
+            <p class="eyebrow">Вывод проекта</p>
+            <h2>Гипотеза подтвердилась</h2>
+            <p>
+              Простые инструменты планирования помогают старшеклассникам распределять нагрузку,
+              бороться с прокрастинацией и снижать стресс перед экзаменами. Итоговый продукт
+              можно применять в повседневной подготовке к ЕГЭ и школьным контрольным.
+            </p>
+            <a class="button secondary" href="#dashboard">Вернуться к дашборду</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <strong>Проектирование системы рационального тайм-менеджмента</strong>
+          <span>Автор: Мирказымов Теймур, 10 "А"</span>
+        </div>
+        <a href="#top">Наверх</a>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
